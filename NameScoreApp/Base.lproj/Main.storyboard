@@ -26,6 +26,9 @@
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-Yd-2FA">
                                 <rect key="frame" x="530" y="94" width="34" height="30"/>
                                 <state key="normal" title="send"/>
+                                <connections>
+                                    <segue destination="sFO-CX-4WW" kind="show" identifier="showResult" id="0M6-qq-U85"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -42,6 +45,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1055" y="330"/>
+        </scene>
+        <!--診断結果-->
+        <scene sceneID="Dui-7j-f2A">
+            <objects>
+                <viewController id="sFO-CX-4WW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mB5-U2-0by"/>
+                        <viewControllerLayoutGuide type="bottom" id="2nk-Wr-LSH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kz0-eL-NrR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39v-WX-gFV">
+                                <rect key="frame" x="215" y="262" width="171" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの点数は..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2A-cv-Rh4">
+                                <rect key="frame" x="234" y="141.5" width="133" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D2A-cv-Rh4" firstAttribute="centerX" secondItem="Kz0-eL-NrR" secondAttribute="centerX" id="AEN-OP-94o"/>
+                            <constraint firstItem="39v-WX-gFV" firstAttribute="centerX" secondItem="Kz0-eL-NrR" secondAttribute="centerX" id="YfL-L5-4qv"/>
+                            <constraint firstItem="39v-WX-gFV" firstAttribute="top" secondItem="D2A-cv-Rh4" secondAttribute="bottom" constant="100" id="bKI-pU-UAU"/>
+                            <constraint firstItem="39v-WX-gFV" firstAttribute="centerY" secondItem="Kz0-eL-NrR" secondAttribute="centerY" id="opW-tx-MeW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="診断結果" id="8tc-FZ-yXK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v38-D7-0mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="330"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EVb-4x-pdS">
