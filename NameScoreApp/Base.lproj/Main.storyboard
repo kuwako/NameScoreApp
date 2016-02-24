@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-o9-uHa">
-                                <rect key="frame" x="30" y="94" width="486" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-o9-uHa">
+                                <rect key="frame" x="30" y="94" width="496" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-Yd-2FA">
-                                <rect key="frame" x="530" y="94" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-Yd-2FA">
+                                <rect key="frame" x="536" y="94" width="34" height="30"/>
                                 <state key="normal" title="send"/>
                                 <connections>
                                     <segue destination="sFO-CX-4WW" kind="show" identifier="showResult" id="0M6-qq-U85"/>
@@ -37,10 +37,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="CQq-Yd-2FA" secondAttribute="trailing" constant="10" id="5zP-Ql-4bh"/>
                             <constraint firstItem="EJv-o9-uHa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="NRh-qD-TWL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CQq-Yd-2FA" secondAttribute="trailing" constant="10" id="Qjp-QI-Ucv"/>
+                            <constraint firstItem="EJv-o9-uHa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="TaE-32-EIs"/>
+                            <constraint firstItem="CQq-Yd-2FA" firstAttribute="leading" secondItem="EJv-o9-uHa" secondAttribute="trailing" constant="10" id="ePk-V3-PRo"/>
                             <constraint firstItem="EJv-o9-uHa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="fNF-0Y-AeO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="姓名診断" id="YvP-FG-Q5U"/>
+                    <connections>
+                        <outlet property="textField" destination="EJv-o9-uHa" id="99l-Kb-mZf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +54,7 @@
         <!--診断結果-->
         <scene sceneID="Dui-7j-f2A">
             <objects>
-                <viewController id="sFO-CX-4WW" sceneMemberID="viewController">
+                <viewController id="sFO-CX-4WW" customClass="ResultViewController" customModule="NameScoreApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mB5-U2-0by"/>
                         <viewControllerLayoutGuide type="bottom" id="2nk-Wr-LSH"/>
@@ -80,6 +85,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="診断結果" id="8tc-FZ-yXK"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="D2A-cv-Rh4" id="3dq-rK-G4c"/>
+                        <outlet property="scoreLabel" destination="39v-WX-gFV" id="51Z-hd-4HZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v38-D7-0mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,7 @@
 		6C570C931C7DAB440037C803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C570C911C7DAB440037C803 /* LaunchScreen.storyboard */; };
 		6C570C9E1C7DAB440037C803 /* NameScoreAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C570C9D1C7DAB440037C803 /* NameScoreAppTests.swift */; };
 		6C570CA91C7DAB440037C803 /* NameScoreAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C570CA81C7DAB440037C803 /* NameScoreAppUITests.swift */; };
+		6C570CB71C7DAFD50037C803 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C570CB61C7DAFD50037C803 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6C570CA41C7DAB440037C803 /* NameScoreAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameScoreAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C570CA81C7DAB440037C803 /* NameScoreAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameScoreAppUITests.swift; sourceTree = "<group>"; };
 		6C570CAA1C7DAB440037C803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C570CB61C7DAFD50037C803 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				6C570C881C7DAB440037C803 /* AppDelegate.swift */,
 				6C570C8A1C7DAB440037C803 /* ViewController.swift */,
+				6C570CB61C7DAFD50037C803 /* ResultViewController.swift */,
 				6C570C8C1C7DAB440037C803 /* Main.storyboard */,
 				6C570C8F1C7DAB440037C803 /* Assets.xcassets */,
 				6C570C911C7DAB440037C803 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				6C570C8B1C7DAB440037C803 /* ViewController.swift in Sources */,
 				6C570C891C7DAB440037C803 /* AppDelegate.swift in Sources */,
+				6C570CB71C7DAFD50037C803 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
