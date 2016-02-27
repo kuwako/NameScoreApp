@@ -21,7 +21,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-o9-uHa">
                                 <rect key="frame" x="30" y="94" width="496" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-Yd-2FA">
                                 <rect key="frame" x="536" y="94" width="34" height="30"/>
@@ -44,6 +44,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="姓名診断" id="YvP-FG-Q5U"/>
                     <connections>
+                        <outlet property="sendButton" destination="CQq-Yd-2FA" id="aFv-OJ-Lzz"/>
                         <outlet property="textField" destination="EJv-o9-uHa" id="99l-Kb-mZf"/>
                     </connections>
                 </viewController>
